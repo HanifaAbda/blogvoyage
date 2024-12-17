@@ -1,0 +1,323 @@
+* {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+
+    body {
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(33, 133, 208, 0.5)), url(img/header_image.avif);
+        text-align: center;
+        padding: 5rem 10rem;
+        color: white;
+        background-size: cover;
+
+        a {
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+                li {
+
+                    button {
+                        border-width: 0px;
+                        background-color: rgb(33, 133, 208);
+                        color: white;
+                        padding: 5px;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width:768px) {
+        header {
+            padding: 2rem 2rem;
+        }
+
+    }
+
+    main {
+
+        section#nosServices {
+            margin: 0;
+            padding: 0;
+
+
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+
+                img {
+                    width: 15%;
+                    height: 15%;
+                }
+
+                li.darkBackground {
+                    background-color: rgb(240, 240, 240);
+                    width: 50%;
+                    padding: 4% 0 0 0;
+                }
+
+                li.lightBackground {
+                    width: 50%;
+                    padding: 4% 0 0 0;
+
+                }
+            }
+        }
+
+        section#mapObjectif {
+            position: relative;
+
+            div#mapId {
+                position: relative;
+                width: 100%;
+
+                iframe {
+                    width: 100%;
+                    height: 450px;
+
+                }
+            }
+
+            div#destination {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 30%;
+                width: 100%;
+                text-align: center;
+
+                ul#photosSurMap {
+                    color: white;
+                    width: 60%;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: row;
+
+                    li#swimmingPool {
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(img/item1.avif);
+                        background-size: cover;
+                        background-position: center;
+                        width: 100%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                    li#girlDrinkingMilk {
+                        background-image: linear-gradient(rgba(33, 133, 208, 0.5), rgba(0, 0, 0, 0.7)), url(img/item2.avif);
+                        background-size: cover;
+                        background-position: center;
+                        width: 100%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+
+            }
+
+            div#objectifExploration {
+                border-bottom: 1px solid rgb(208, 208, 208);
+                padding-bottom: 5%;
+                text-align: center;
+
+                h2 {
+                    margin-top: 15%;
+                }
+            }
+
+            ul#objectif {
+                display: flex;
+                flex-direction: row;
+
+
+                padding: 0;
+                margin: 0;
+                width: 100%;
+
+                 li {
+                    padding: 3% 2% 0% 2%;
+                    border: 1px solid rgb(208, 208, 208);
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        section#explorezLeMonde {
+            background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.829),rgba(33, 133, 208, 0.5)), url(img/main_image.avif);
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+
+
+
+            div {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+
+
+                button {
+                    border-width: 0px;
+                    width: 50% ;
+                    padding: 0.5%;
+                    background-color: rgb(33, 133, 208);
+                    color: white;
+                }
+            }
+        }
+
+        #blueLine {
+            height: 10px;
+            background-color: rgb(33, 133, 208);
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        main {
+            width: 100%;
+
+            section#mapObjectif {
+
+                div#destination {
+
+                    bottom: 30%;
+    
+                    ul#photosSurMap {
+                        display: flex;
+                        flex-direction: column;
+
+                        li {
+
+                        }
+                    }
+                }
+    
+                div#objectifExploration {
+                    margin-top: 50%;
+                }
+            }
+
+            section#explorezLeMonde {
+                display: flex;
+                justify-content: center;
+                height: 15%;
+                padding-bottom: 20%;
+                padding-top: 15%;
+
+
+                div {
+
+                    button {
+                        border-width: 0px;
+                        width: 120%;
+                        padding: 1%;
+                        background-color: rgb(33, 133, 208);
+                        color: white;
+                    }
+                }
+
+                section#nosServices {
+
+                    ul li.darkBackground {
+                        width: 44%;
+                        padding: 4% 3% 2%;
+
+                    }
+
+                    ul li.lightBackground {
+                        width: 44%;
+                        padding: 4% 3% 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+        padding: 3% 0;
+
+
+        div#logoText {
+            width: 28%;
+
+            img {
+                width: 20%;
+                height: 20%; 
+                object-fit: contain;
+            }
+        }
+
+        p {
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+
+        h3 {
+            padding-bottom: 10%;
+            padding-top: 10%;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        footer {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 0;
+
+            }
+        }
+    }
+
+
+}
